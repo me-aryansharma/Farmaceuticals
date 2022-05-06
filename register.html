@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmaceuticals</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="../static/style2.css">   
+</head>
+
+<body>
+    <nav id="navbar">
+        <ul>
+            <div id="logo"><img src="/static/img/logo.jpeg"></div>
+            <div class="navs">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./register.html">Register Here</a></li>
+            <li><a href="./status.html">Check Status</a></li>
+			      <li><a href="./complaint.html">Complaint</a></li>
+          </div>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Fill the details to register</h1>
+        <form class="myForm" id="register" action="/donate" method="post">
+          <input class="myInput" type="text" id="state" placeholder="Enter your State"/>
+          <input class="myInput" type="text" id="district" placeholder="Enter your District"/>
+          <input class="myInput" type="text" id="village" placeholder="Enter your Village"/>
+          <input class="myInput" type="text" id="name" placeholder="Land Owner's Name"/>
+		      <input class="myInput" type="number" id="khasra" placeholder="Enter Khasra Number"/>
+          <input class="myInput" type="number" id="adhaar" placeholder="Enter your Adhaar Number"/>
+          <input class="myInput" type="number" id="contact" placeholder="Enter your Contact Number"/>
+          <input class="myInput" type="text" id="address" placeholder="Enter your Address"/> 
+          <button class="btn">Submit</button>
+        </form>
+      </div>
+
+      <footer id="footer">Copyright © 2022 Team Farmaceuticals | All rights reserved</footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="../register.js"></script>
+</body>
+
+</html>
